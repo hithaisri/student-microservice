@@ -1,5 +1,8 @@
 package com.student.demo.entity;
 
+
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,11 +19,11 @@ public class Student {
 	
 	private String lastName;
 	
-	private String subject;
+	private Integer subject;
 	
-	private String dob;
+	private Date dob;
 	
-	private String grade;
+	private Integer grade;
 
 	public Integer getId() {
 		return id;
@@ -46,31 +49,31 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-	public String getSubject() {
+	public Integer getSubject() {
 		return subject;
 	}
 
-	public void setSubject(String subject) {
+	public void setSubject(Integer subject) {
 		this.subject = subject;
 	}
 
-	public String getDob() {
+	public Date getDob() {
 		return dob;
 	}
 
-	public void setDob(String dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 
-	public String getGrade() {
+	public Integer getGrade() {
 		return grade;
 	}
 
-	public void setGrade(String grade) {
+	public void setGrade(Integer grade) {
 		this.grade = grade;
 	}
 
-	public Student(Integer id, String firstName, String lastName, String subject, String dob, String grade) {
+	public Student(Integer id, String firstName, String lastName, Integer subject, Date dob, Integer grade) {
 		super();
 		this.id = id;
 		this.firstName = firstName;

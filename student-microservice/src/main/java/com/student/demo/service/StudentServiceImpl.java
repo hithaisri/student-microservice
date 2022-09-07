@@ -26,7 +26,7 @@ public class StudentServiceImpl implements IStudentService{
 	}
 
 	@Override
-	public List<Student> getClassStudents(String grade) {
+	public List<Student> getClassStudents(Integer grade) {
 		return studentRepository.findByGrade(grade);
 	}
 

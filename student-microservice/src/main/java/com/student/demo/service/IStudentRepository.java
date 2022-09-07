@@ -8,6 +8,6 @@ import com.student.demo.entity.Student;
 
 public interface IStudentRepository extends JpaRepository<Student, Integer>  {
 
-	List<Student> findByGrade(String grade);
+	List<Student> findByGrade(Integer grade);
 	
 }

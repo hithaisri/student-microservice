@@ -9,7 +9,7 @@ public interface IStudentService {
 
 	public List<Student> getAllStudents();
 	public Optional<Student> getStudentById(Integer id);
-	public List<Student> getClassStudents(String grade);
+	public List<Student> getClassStudents(Integer grade);
 	public Student saveStudent(Student student);
 	public void deleteStudent(Integer id);
 	public void deleteAllStudents();
